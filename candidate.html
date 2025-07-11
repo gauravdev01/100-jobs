@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate | 100B Jobs 🚀</title>
+    <meta name="description" content="Choosing the best candidates with a powerful AI">
+    <link rel="stylesheet" href="./styles/material.css">
+    <link rel="stylesheet" href="./styles/candidate.css">
+    <link rel="stylesheet" href="./styles/vt-app.css">
+    <!-- https://www.npmjs.com/package/random-color-pearl - npm package is made by me -->
+    <script src="https://unpkg.com/random-color-pearl@1.0.6/src/randomColorSvg.min.js"></script>
+    <script type="importmap">
+        {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+          </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {
+            styles as typescaleStyles
+        } from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <header>
+        <md-icon-button aria-label="Back to All Candidates" href="./index.html">
+            <md-icon>arrow_back</md-icon>
+        </md-icon-button>
+        <md-ripple></md-ripple>
+    </header>
+    <main>
+        <user-profile></user-profile>
+        <timeline-component title="Work Experience"></timeline-component>
+        <candidate-details></candidate-details>
+        <advanced-timeline-component title="Education"></advanced-timeline-component>
+        <skills-component></skills-component>
+    </main>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

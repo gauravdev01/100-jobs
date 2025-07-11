@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Data | 100B Jobs 🚀</title>
+    <meta name="description" content="Choosing the best candidates with a powerful AI">
+    <link rel="stylesheet" href="./styles/material.css">
+    <link rel="stylesheet" href="./styles/upload.css">
+    <script type="importmap">
+            {
+                  "imports": {
+                    "@material/web/": "https://esm.run/@material/web/"
+                  }
+                }
+              </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {
+            styles as typescaleStyles
+        } from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <main>
+        <form>
+            <label for="file">Upload Candidate List</label>
+            <input type="file" name="file" id="file" accept=".json">
+            <md-outlined-text-field type="textarea" label="Job Description" rows="6" required="true">
+            </md-outlined-text-field>
+            <md-filled-button type="submit">Upload and Evaluate Candidates using AI</md-filled-button>
+        </form>
+        <p>
+            <span>
+                The above process maybe time consuming but ensures all the data is scored and uploaded. It uses Local AI
+                API to score candidates out of 7 and a custom logic to score out of 3, thus the final score is out of 10
+                and
+                top 5 candidates can be filtered from the home page.
+            </span>
+        </p>
+        <md-dialog>
+            <div slot="headline">
+                Dialog title
+            </div>
+            <form slot="content" id="form-id" method="dialog">
+                A simple dialog with free-form content.
+            </form>
+            <div slot="actions">
+                <md-text-button form="form-id">Ok</md-text-button>
+            </div>
+        </md-dialog>
+    </main>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-color: var(--md-sys-color-background);
+    margin-inline: auto;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    inline-size: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    padding-block-start: 100px;
+}

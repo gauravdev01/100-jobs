@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Candidates | 100B Jobs 🚀</title>
+    <meta name="description" content="Choosing the best candidates with a powerful AI">
+    <link rel="stylesheet" href="./styles/material.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/vt-index.css">
+    <script type="importmap">
+        {
+              "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+              }
+            }
+          </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {
+            styles as typescaleStyles
+        } from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>100B Jobs <span class="rocket" aria-hidden="true">🚀</span></h1>
+        <search-bar></search-bar>
+        <div class="container">
+            <md-chip-set>
+                <md-filter-chip label="Top Candidates"></md-filter-chip>
+            </md-chip-set>
+            <output class="count">Showing 0 results</output>
+        </div>
+        <section class="candidate-list loading"></section>
+        <div class="shine" hidden>
+            <svg width="100%" height="100%" viewBox="0 0 367 530" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Skeleton loader</title>
+                <rect x="0.0168457" width="366" height="169" rx="20" fill="#1A1C1E" />
+                <rect x="0.0168457" y="181" width="366" height="168" rx="20" fill="#1A1C1E" />
+                <rect x="0.0168457" y="361" width="366" height="169" rx="20" fill="#1A1C1E" />
+            </svg>
+        </div>
+        <section class="pagination">
+            <pagination-component current="" per-page="" total=""></pagination-component>
+        </section>
+    </main>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
