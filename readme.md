@@ -1,14 +1,10 @@
 # 100B Jobs 🚀
 
-**Author:** Yash Raj
 
 ## Overview
 
-100B Jobs is a full-stack hiring platform built from scratch to help founders evaluate and hire top candidates from a large pool of applicants. The project was developed as part of the Mercor "100B Jobs" assignment challenge.
+A full-stack recruitment dashboard built with React + Tailwind CSS to help select top candidates from 1000+ form submissions.
 
-This app is designed to simulate a real-world hiring decision system after a $100M seed round, where the goal is to filter, evaluate, and select the top 5 candidates using both custom logic and AI-driven scoring (currently under development).
-
-![Low fi](./design/Low%20Fidelity.png)
 
 ## Stack
 
@@ -79,14 +75,3 @@ Navigate to `http://localhost:3001` to access the `/upload` page:
 - Easily extendable to use SQL for large datasets or production use
 - Designed with accessibility and performance best practices
 
-## Future Enhancements
-
-- Integrate Ollama locally for real AI-based JD-candidate scoring
-- Add more filters (e.g., location, degree, salary)
-- Expand scoring logic to include university tier, GPA, etc.
-- Auth + role-based views for hiring teams
-- Candidate shortlisting pipeline
-
-## Credits
-
-Built and designed by Yash Raj as part of the Mercor "100B Jobs" challenge.
